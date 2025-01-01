@@ -14,9 +14,9 @@
 
 void	image_select(t_game *data, size_t y, size_t x)
 {
-	size_t	image_size;
+	//size_t	image_size;
 
-	image_size = 32;
+	//image_size = 32;
 	if (data->grid[y][x] == '1')
 		if (mlx_image_to_window(data->mlx, data->img->tree,
 				x * PIXELS, y * PIXELS) < 0)

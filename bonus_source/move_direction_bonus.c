@@ -15,12 +15,12 @@
 void	remove_eyeball(t_game *game, int y, int x)
 {
 	size_t	i;
-	int		k;
+	//int		k;
 
 	x = x * 64 ;
 	y = y * 64 ;
 	i = 0;
-	k = 0;
+	//k = 0;
 	while (i < game->img->eyeball->count)
 	{
 		if (game->img->eyeball->instances[i].x == x
@@ -29,7 +29,7 @@ void	remove_eyeball(t_game *game, int y, int x)
 			game->img->eyeball->instances[i].enabled = false;
 		}
 		i++;
-		k++;
+		//k++;
 	}
 }
 
